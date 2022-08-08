@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    background-color: rgb(202, 206, 210);
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 170px;
+    padding-right:170px;
+}
+
+@media only screen and (max-width: 447px ) {
+    
+    .all-content{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 0;
+        padding: 0;
+        background-color: red;
+        color: aqua;
+    }
+}
+
+@media only screen and (min-width: 477px) {
+    
+    .card{
+        background-color: yellow;
+    }
+}
+
+
+
+
+
+.all-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    list-style-type: none;
+}
+
+.card{
+    border: 1px solid black;
+    width: 200px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+}
+
+.card-right-margin{
+    margin-right: 0px;
+}
+
+.card:nth-child(1), .card:nth-child(2), .card:nth-child(3){
+    margin-bottom: 20px;    
+}
+
+.dars-turkumi{
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(28, 54, 45);
+    margin-bottom: 20px;
+}
+
+.green-flash{
+    font-style: 89px;
+    font-weight: 900;
+    color: rgb(90, 210, 90);
+}
+
+.daes-turi{
+    font-weight: 400;
+    color: rgb(28, 54, 45);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.dars-jadvali{
+    display: flex;
+    margin-bottom: 30px
+}
+
+.dars-jadvali-box{
+    margin-right: 40px;
+}
+
+.dars-vaqti{
+    color: rgb(48, 109, 88);
+    font-size:11px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.dars-soati{
+    color: rgb(28, 54, 45);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.line{
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto;     */
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+.kurs-narxi-tex{
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(48, 109, 88);
+    margin-bottom: 10px;
+}
+
+.kurs-narxi{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(28, 54, 45);
+}
